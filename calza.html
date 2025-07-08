@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Calzas Deportivas - DICA SPORT</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #fef9e7;
+            margin: 0;
+        }
+
+        header {
+            background-color: #eb984e;
+            padding: 20px;
+            text-align: center;
+            color: white;
+        }
+
+        .productos {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .producto {
+            background-color: teal;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+            padding: 15px;
+            text-align: center;
+        }
+
+   .producto img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            }
+        
+
+        .producto h3 {
+            margin: 10px 0 5px;
+        }
+
+        .producto p {
+            margin: 5px 0;
+            font-weight: bold;
+            color: black;
+        }
+
+
+.imagen-producto {
+  width: 100%;
+  height: 200px;           /* Altura fija para todas las imágenes */
+  overflow: hidden;        /* Oculta lo que se salga */
+  border-radius: 8px;      /* Bordes redondeados como antes */
+}
+
+.imagen-producto img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;       /* Recorta y llena el cuadro sin deformar */
+}
+
+
+
+        footer {
+        
+      text-align: center;
+      padding: 10px 0;
+      background-color: white;
+      color: darkgreen;
+      position: fixed;                      /* Siempre abajo */
+      bottom: 0;
+      width: 100%;
+        }
+
+        a.volver {
+            display: inline-block;
+            margin: 20px;
+            text-decoration: none;
+            background-color: #eb984e;
+            color: white;
+            padding: 8px 15px;
+            border-radius: 8px;
+        }
+
+        a.volver:hover {
+            background-color: #ca6f1e;
+        }
+    </style>
+</head>
+<body>
+
+  <header>
+
+
+        <h1>Calzas Deportivas</h1>
+        <a href="catalogo.html" class="volver">← Volver al catálogo</a>
+    </header>
+
+    <section class="productos">
+        <div class="producto">
+  <div class="imagen-producto">
+    <img src="imagenes/Calza/1.jpeg" alt="CALZA DEPORTIVA 1">
+  </div>
+  <h3>Calza Larga Rosa China</h3>
+  <p>$34.800</p>
+</div>
+
+
+
+        <div class="producto">
+             <img src="imagenes/Calza/2.jpeg" alt="CALZA DEPORTIVA 2">
+            <h3>Calza Larga Punto Gris</h3>
+            <p>$34.800</p>
+        </div>
+
+        <div class="producto">
+             <img src="imagenes/Calza/3.jpeg" alt="CALZA DEPORTIVA 3">
+            <h3>Calza Corta Camuflado Gris</h3>
+            <p>$25.800</p>
+        </div>
+ <div class="producto">
+            <img src="imagenes/Calza/4.jpeg" alt="CALZA DEPORTIVA 4">
+            <h3>Calza Corta Camuflado Azul</h3>
+            <p>$25.800</p>
+        </div>
+        <div class="producto">
+            <img src="imagenes/Calza/5.jpeg" alt="CALZA DEPORTIVA 5">
+            <h3>Calza Corta Margarita</h3>
+            <p>$25.800</p>
+        </div>
+        <div class="producto">
+             <img src="imagenes/Calza/6.jpeg" alt="CALZA DEPORTIVA 6">
+            <h3>Calza Corta Fluo Amarillo (promo)</h3>
+            <p>$15.800</p>
+        </div>
+
+
+        <div class="producto">
+  <div class="imagen-producto">
+     <img src="imagenes/Calza/7.jpeg" alt="CALZA DEPORTIVA 7">
+  </div>
+  <h3>Calza Corta Fluo Naranja (promo)</h3>
+  <p>$15.800</p>
+</div>
+
+
+        <!-- Agregá más productos así -->
+    </section>
+
+    <footer>
+        © 2025 DICA SPORT - Miguel y Nadia
+    </footer>
+
+</body>
+</html>

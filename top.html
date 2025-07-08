@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Tops Deportivos - DICA SPORT</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #fef9e7;
+            margin: 0;
+        }
+
+        header {
+            background-color: #eb984e;
+            padding: 20px;
+            text-align: center;
+            color: white;
+        }
+
+        .productos {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .producto {
+            background-color: teal;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+            padding: 15px;
+            text-align: center;
+        }
+
+   .producto img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            }
+        
+
+        .producto h3 {
+            margin: 10px 0 5px;
+        }
+
+        .producto p {
+            margin: 5px 0;
+            font-weight: bold;
+            color: black;
+        }
+
+
+.imagen-producto {
+  width: 100%;
+  height: 200px;           /* Altura fija para todas las imágenes */
+  overflow: hidden;        /* Oculta lo que se salga */
+  border-radius: 8px;      /* Bordes redondeados como antes */
+}
+
+.imagen-producto img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;       /* Recorta y llena el cuadro sin deformar */
+}
+
+
+
+        footer {
+        
+      text-align: center;
+      padding: 10px 0;
+      background-color: white;
+      color: darkgreen;
+      position: fixed;                      /* Siempre abajo */
+      bottom: 0;
+      width: 100%;
+        }
+
+        a.volver {
+            display: inline-block;
+            margin: 20px;
+            text-decoration: none;
+            background-color: #eb984e;
+            color: white;
+            padding: 8px 15px;
+            border-radius: 8px;
+        }
+
+        a.volver:hover {
+            background-color: #ca6f1e;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Tops Deportivos</h1>
+        <a href="catalogo.html" class="volver">← Volver al catálogo</a>
+    </header>
+
+    <section class="productos">
+        <div class="producto">
+  <div class="imagen-producto">
+    <img src="imagenes/top/1.jpeg" alt="Top deportivo 1">
+  </div>
+  <h3>Rocas Celestes</h3>
+  <p>$15.800</p>
+</div>
+
+
+
+        <div class="producto">
+            <img src="Imagenes/top/2.jpeg" alt="Top deportivo 2">
+            <h3>Rama Multicolor</h3>
+            <p>$15.800</p>
+        </div>
+
+        <div class="producto">
+            <img src="Imagenes/top/3.jpeg" alt="Top deportivo 3">
+            <h3>Punto Gris</h3>
+            <p>$15.800</p>
+        </div>
+ <div class="producto">
+            <img src="Imagenes/top/4.jpeg" alt="Top deportivo 4">
+            <h3>Rosa China</h3>
+            <p>$15.800</p>
+        </div>
+        <div class="producto">
+            <img src="Imagenes/top/5.jpeg" alt="Top deportivo 5">
+            <h3>Fucsia Fluo</h3>
+            <p>$15.800</p>
+        </div>
+        <div class="producto">
+            <img src="imagenes/top/6.jpeg" alt="Top deportivo 6">
+            <h3>Camuflado Gris</h3>
+            <p>$15.800</p>
+        </div>
+
+
+        <div class="producto">
+  <div class="imagen-producto">
+    <img src="imagenes/top/7.jpeg" alt="Top deportivo 7">
+  </div>
+  <h3>Fluo Amarillo</h3>
+  <p>$15.800</p>
+</div>
+
+
+        <!-- Agregá más productos así -->
+    </section>
+
+    <footer>
+        © 2025 DICA SPORT - Miguel y Nadia
+    </footer>
+
+</body>
+</html>

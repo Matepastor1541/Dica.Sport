@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Catálogo - DICA SPORT</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #fef9e7;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #eb984e;
+            padding: 20px;
+            text-align: center;
+            color: white;
+        }
+
+        .catalogo {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .item {
+            background-color: white;
+            border-radius: 12px;
+            padding: 15px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+
+        .imagen-item {
+            width: 100%;
+            height: 180px;
+            overflow: hidden;
+            border-radius: 8px;
+        }
+
+        .imagen-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .item h3 {
+            margin: 10px 0 5px;
+            font-size: 18px;
+        }
+
+        .item a {
+            display: inline-block;
+            margin-top: 8px;
+            text-decoration: none;
+            color: white;
+            background-color: #eb984e;
+            padding: 6px 12px;
+            border-radius: 8px;
+            transition: background-color 0.3s;
+        }
+
+        .item a:hover {
+            background-color: #ca6f1e;
+        }
+
+        footer {
+            text-align: center;
+            padding: 15px;
+            background-color: #eee;
+            margin-top: 30px;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Catálogo de Productos</h1>
+        <a href="Dica.Sport.html" style="color: white; text-decoration: underline;">← Volver al inicio</a>
+    </header>
+
+    <section class="catalogo">
+        <div class="item">
+            <div class="imagen-item">
+                <img src="imagenes/top/7.jpeg" alt="Tops deportivos">
+            </div>
+            <h3>Tops Deportivos</h3>
+            <a href="top.html">Ver más</a>
+        </div>
+
+        <div class="item">
+            <div class="imagen-item">
+                <img src="imagenes/Calza/4.jpeg" alt="Calzas">
+            </div>
+            <h3>Calzas Deportivas</h3>
+            <a href="calza.html">Ver más</a>
+        </div>
+
+        <div class="item">
+            <div class="imagen-item">
+                <img src="imagenes/SUDADERAS/7.jpeg" alt="Sudaderas">
+            </div>
+            <h3>Sudaderas</h3>
+            <a href="sudadera.html">Ver más</a>
+        </div>
+
+        <div class="item">
+            <div class="imagen-item">
+                <img src="imagenes/Cuellitos/3.jpeg" alt="Cuellitos">
+            </div>
+            <h3>Cuellitos</h3>
+            <a href="cuellitos.html">Ver más</a>
+        </div>
+
+        <div class="item">
+            <div class="imagen-item">
+                <img src="imagenes/POLLERAS/1.jpeg" alt="Polleras">
+            </div>
+            <h3>Polleras</h3>
+            <a href="polleras.html">Ver más</a>
+        </div>
+
+        <div class="item">
+            <div class="imagen-item">
+                <img src="imagenes/rinioneras/1.png" alt="Riñoneras">
+            </div>
+            <h3>Riñoneras</h3>
+            <a href="rinioneras.html">Ver más</a>
+        </div>
+    </section>
+
+    <footer>
+        © 2025 DICA SPORT - Todos los derechos reservados
+    </footer>
+</body>
+</html>

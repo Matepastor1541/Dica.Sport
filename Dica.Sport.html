@@ -1,0 +1,247 @@
+<!DOCTYPE html> <!-- Indica que es un documento HTML5 -->
+<html lang="es"> <!-- El sitio está en español -->
+
+<head>
+  <meta charset="UTF-8"> <!-- Permite usar caracteres como ñ, tildes, etc. -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Hace que el sitio se vea bien en celulares -->
+  <title>DICA SPORT</title> <!-- Título que aparece en la pestaña del navegador -->
+
+  <style>
+    /* === ESTILOS GENERALES === */
+    body {
+      font-family: 'Poppins', sans-serif;  /* Letra moderna */
+      background-color: #a2d9ce;            /* Color de fondo celeste claro */
+      margin: 0;
+      padding: 0 0 120px 0;                 /* Espacio abajo para que no tape el footer fijo */
+    }
+
+    h1, h2 {
+      margin: 0 0 10px 0;                   /* Espacio entre títulos y lo que sigue */
+    }
+
+    /* === HEADER === */
+    header {
+      background-color: #eb984e;            /* Naranja clarito */
+      text-align: center;
+      padding: 25px 0;
+      display: flex;                        /* Centrado vertical con flexbox */
+      flex-direction: column;
+      align-items: center;
+    }
+
+    header img {
+      height: 280px;                        /* Tamaño del logo */
+      margin-bottom: 10px;
+    }
+
+    /* === NAVEGACIÓN === */
+    nav {
+      background-color: #444;               /* Gris oscuro */
+      text-align: center;
+      padding: 30px 0;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.6);  /* Sombra abajo del menú */
+    }
+
+    nav ul {
+      list-style-type: none;                /* Saca los puntitos de la lista */
+      padding: 0;
+      margin: 0;
+    }
+
+    nav ul li {
+      display: inline;                      /* Pone los links uno al lado del otro */
+      margin: 0 20px;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;                /* Le saca el subrayado */
+      font-size: 20px;
+    }
+
+    nav ul li a:hover {
+      text-decoration: underline;           /* Efecto al pasar el mouse */
+      color: red;
+    }
+
+    /* === PRODUCTOS === */
+    .fila-productos {
+      display: flex;                        /* Los productos van en fila */
+      justify-content: center;              /* Centra horizontalmente */
+      gap: 20px;                            /* Espacio entre productos */
+      flex-wrap: wrap;                      /* Si no entran, bajan a otra fila */
+      margin: 40px 0;
+    }
+
+    .producto {
+      flex: 1 1 300px;                      /* Tienen tamaño base 300px, pero se adaptan */
+      max-width: 300px;
+      padding: 20px;
+      margin: 20px;
+      border-radius: 12px;                  /* Esquinas redondeadas */
+      box-shadow: 0 8px 10px rgba(0, 0, 0, 0.5); /* Sombra suave */
+      text-align: center;
+      background-color: white;              /* Fondo blanco por defecto */
+    }
+
+    .producto img {
+      width: 100%;                          /* Que ocupe todo el ancho del contenedor */
+      height: auto;                         /* Mantiene proporción */
+      border-radius: 12px;
+      margin-bottom: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+      object-fit: cover;                    /* Recorta la imagen si no encaja bien */
+    }
+
+
+.imagen-producto {
+  width: 100%;
+  height: 180px;           /* Altura fija */
+  overflow: hidden;
+  border-radius: 12px;
+  margin-bottom: 10px;
+}
+
+.imagen-producto img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;       /* Recorta sin deformar */
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+
+
+    /* === VIDEO === */
+    .video-container {
+      position: relative;
+      padding-bottom: 56.25%;               /* Relación 16:9 para YouTube */
+      padding-top: 25px;
+      height: 0;
+      margin: 40px 0;
+    }
+
+    .video-container iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100% !important;
+      height: 100% !important;
+    }
+
+    /* === FOOTER === */
+    footer {
+      text-align: center;
+      padding: 10px 0;
+      background-color: white;
+      color: darkgreen;
+      position: fixed;                      /* Siempre abajo */
+      bottom: 0;
+      width: 100%;
+    }
+
+    /* === MEDIA QUERIES === (para pantallas chicas) */
+    @media (max-width: 768px) {
+      .fila-productos .producto {
+        flex: 1 1 100%;                     /* Cada producto ocupa toda la fila */
+        max-width: none;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!--Encabezado -->
+  <header>
+    <img src="Imagenes/LOGO/LOGO.jpeg" alt="Logo de Dica Sport"> <!-- Logo de la empresa -->
+    <h1>Bienvenidos a DICA SPORT</h1> <!-- Título principal -->
+  </header>
+
+  <!-- VIDEO MOTIVACIONAL -->
+  <div class="video-container">
+    <iframe src="https://www.youtube.com/embed/SyoOdouN-F4"
+      title="ESOS LOCOS QUE CORREN" frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+    </iframe>
+  </div>
+
+  <!-- MENÚ DE NAVEGACIÓN -->
+  <nav>
+    <ul>
+      <li><a href="top.html">TOPS</a></li>
+      <li><a href="calza.html">CALZAS DEPORTIVAS</a></li>
+      <li><a href="sudadera.html">SUDADERAS</a></li>
+      <li><a href="cuellitos.html">CUELLITOS</a></li>
+      <li><a href="polleras.html">POLLERAS</a></li>
+      <li><a href="rinioneras.html">RIÑONERAS</a></li>
+      <li><a href="catalogo.html">CATÁLOGO</a></li>
+    </ul>
+  </nav>
+
+  <!-- PRODUCTOS - FILA 1 -->
+  <div class="fila-productos">
+    <section class="producto" style="background-color: greenyellow;"> <!-- Color propio -->
+      <h2>TOPS</h2>
+<a href="top.html">
+  <div class="imagen-producto">
+    <img src="imagenes/top/7.jpeg" alt="Top">
+  </div>
+</a>
+      <p>Tops deportivos de alto rendimiento, lisos y estampados.</p>
+    </section>
+
+    <section class="producto" style="background-color: teal;">
+      <h2>CALZAS</h2>
+      <a href="calza.html">
+<div class="imagen-producto">
+        <img src="imagenes/Calza/4.jpeg" alt="Calza">
+      </div>
+      </a>
+      <p>Calzas estampadas y lisas confeccionadas en Albisap.</p>
+    </section>
+
+    <section class="producto" style="background-color: #c763db;">
+      <h2>SUDADERAS</h2>
+      <a href="sudadera.html">
+        <div class="imagen-producto">
+        <img src="imagenes/SUDADERAS/7.jpeg" alt="Sudadera"></a>
+      <p>Sudaderas livianas, en microfibra y dry-fit de calidad.</p>
+    </section>
+  </div>
+
+  <!-- PRODUCTOS - FILA 2 -->
+  <div class="fila-productos">
+    <section class="producto" style="background-color: #dc7633;">
+      <h2>POLLERAS</h2>
+      <a href="polleras.html">
+<div class="imagen-producto">
+        <img src="imagenes/POLLERAS/1.jpeg" alt="Pollera"></a>
+      <p>Polleras deportivas con calza interna, ideales para el gym.</p>
+    </section>
+
+    <section class="producto" style="background-color: #298a94;">
+      <h2>CUELLITOS</h2>
+      <a href="cuellitos.html">
+        <div class="imagen-producto">
+        <img src="imagenes/Cuellitos/3.jpeg" alt="Cuellito"></a>
+      <p>De lycra frizada, resistentes al frío, con elástico.</p>
+    </section>
+
+    <section class="producto" style="background-color: #dc7650;">
+      <h2>RIÑONERAS</h2>
+      <a href="rinioneras.html">
+<div class="imagen-producto">
+        <img src="imagenes/rinioneras/1.png" alt="Riñonera"></a>
+      <p>Delgadas, estampadas y con cierre reflectivo.</p>
+    </section>
+  </div>
+
+  <!-- PIE DE PÁGINA -->
+  <footer>
+    <p>&copy; 2025 DICA SPORT BY Miguel y Nadia</p>
+  </footer>
+
+</body>
+</html>
